@@ -2,26 +2,299 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container1{
+  background-color: #032541;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  color: #fff;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.object-contain{
+margin: auto;
+}
+.dropdown {
+  margin: none;
+  display: inline-block;
+  position: relative;
+}
+.dropdown-options {
+  color: black;
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 160px;
+  font-size: 15px;
+ 
+}
+.dropdown-link{
+  display: block;
+  margin-bottom: 5px;
+ 
   }
+.dropdown:hover .dropdown-options {
+  display: block;
 }
+.left{
+  display: flex;
+  gap: 30px;
+}
+.right{
+  display: flex;
+  gap: 30px;
+  margin: none;
+}
+.top{
+display: flex;
+justify-content: center;
+  
+  }
+  .backgroung-img{
+    background-size: cover;
+    background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg");
+    width: 85vw;
+    height: 40vh;
+    object-fit: contain; 
+   }
+.heading{
+  color: #fff;
+  padding: 20px 40px;
+  }
+.heading h2{
+font-size: 3rem;
+font-weight: 700;
+}
+.heading h3{
+  font-size: 2rem;
+  font-weight: 600;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  }
+  .feed form{
+margin: -6% 10%;
+
+  }
+  .search_input{
+    width: 75vw;
+    padding: 10px 10px;
+    border-radius: 50px;
+    color: black;
+    outline: none;
+  }
+  .feed form button{
+    padding: 10px 26px ;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgba(30,213,169),rgba(1,180,228) );
+    font-weight: 700;
+    margin-left: -5%;
+    color: #fff;
+  }
+  .feed form button:hover{
+    color: black;
+  }
+
+  .cards{
+     /* margin-top: 5%;  */
+
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .cards h1{
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+  }
+  .card{
+    
+    width: 85vw;
+    padding: 20px ;
+     margin-left: 7%;
+      /* background-color: aqua;   */
+      overflow-x: auto;
+      overflow-y: hidden;
+      display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+  }
+  .card1{
+    background-image: url("https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+ 
+  }
+  .card-list{
+    overflow: hidden;
+width: 11vw;
+height: 45vh;
+/* background-color: aquamarine;  */
+border-radius: 10px;
+box-shadow: 2px 2px #dadada;
+  }
+  .poster-img{
+    height: 32vh;
+    width: 11vw;
+    z-index: 9999;
+    /* background-color: #032541; */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .poster-img img{
+    height: 32vh;
+    width: 11vw;
+   
+    object-fit: cover;
+  }
+  .content{
+    margin-top: 15px;
+    
+  }
+  .content h2{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .content p{
+    font-weight: 600;
+    font-size: 15px;
+    opacity: .6;
+  }
+  
+  .container2{
+  
+  }
+  .container2 h1{
+    
+    margin-left: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .back{
+    margin-top: 5%;
+    width: 100vw;
+    height: 70vh;
+    /* background-color: aquamarine; */
+  
+    overflow: hidden;
+   }
+  .partition{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  
+   padding: 0 5%;
+   color: #fff;
+  }
+  .l{
+    width: 30%;
+    height: 60vh;
+    /* background-color: aqua; */
+margin-bottom: 5%;
+    overflow: hidden;
+  }
+  .l img{
+    width: 80%;
+    height: 60vh;
+   
+    object-fit: cover;
+  }
+  .r{
+    
+    padding: 5% 5%;
+    width: 70%;
+    height: 80vh;
+     /* background-color: #032541;  */
+  }
+  .r h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+    
+  }
+  .span{
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+
+  }
+  .r  h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+ 
+  .r p{
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.5;
+  }
+   .details{
+    margin-top: 10px;
+  }
+  .search{
+    width: 90%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+   margin: 5%;
+   display: flex;
+   justify-content: flex-start;
+   z-index: 99;
+  }
+  .search h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+  }
+  .data-show{ 
+    width: 70% ;
+ margin-top: 5%;
+  }
+  .search-card{
+    width: 100% ;
+    height: 25vh;
+    border-radius: 10px;
+    margin-left: 5%;
+    border: 1px solid #dadada;
+    box-shadow: 2px 2px #dadada;
+    margin-bottom: 5%;
+    display: flex;
+ overflow: hidden;
+  }
+  .img1{
+    overflow-x: hidden;
+  width: 10%;
+height: inherit;
+  }
+  .img1 img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  .dets{
+    width: 90%;
+  margin-top: 20px;
+    margin-left: 20px;
+  }
+  .dets h2{
+font-size: 20px;
+font-weight: 700;
+  }
+  .dets h3{
+    font-size: 18px;
+    font-weight: 600;
+    opacity: .3;
+      }
+      .dets p{
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1;
+          }
